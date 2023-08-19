@@ -11,14 +11,26 @@ body {
 }
 button#relato {
   background-color: red; 
-  margin-top: 5px;
-  width: 150px;
+    width: 150px;
   height: 40px;
   border-radius: 15px;
   color: whitesmoke;
   font-weight: bold;
   border: none;
 }
+
+a#linkrelato {
+  width: 150px;
+  height:40px;
+  padding: 0px;
+  border-radius: 15px;  
+  margin:50px 0px 10px 25px;
+}
+
+a#linkrelato:hover {
+  background-color:#111;
+}
+
 
 button#relato:hover {
 background-color: rgb(255, 68, 68);
