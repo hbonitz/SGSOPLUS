@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 768px){
     .sidenav {
-        display: none;
+       width: 0px;
         
     }
 

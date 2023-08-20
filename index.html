@@ -13,12 +13,12 @@
 
 <body>
   <header>
-    
-    <span class="material-symbols-outlined">account_circle</span>   
+   <button class="openbtn" onclick="openNav()"><span id="menu" class="material-symbols-outlined" >menu</span></button>
+    <span id="user" class="material-symbols-outlined">account_circle</span>   
   </header>
 
 
-<div class="sidenav">
+<div id="mySidepanel" class="sidenav" class="closebtn" onclick="closeNav()">
   <img src="imagens/logonovofundoescuroaltpq.png" alt="logo">
   <a id="linkrelato" href="relatos.html" target="tela" ><button id="relato">Enviar Relato</button></a>
   <a href="home.html" target="tela">Início</a>
@@ -62,6 +62,13 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "200px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
 </script>
 
 </body>
