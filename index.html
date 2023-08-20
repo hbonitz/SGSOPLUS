@@ -18,8 +18,11 @@
   </header>
 
 
-<div id="mySidepanel" class="sidenav" class="closebtn" onclick="closeNav()">
+<div id="mySidepanel" class="sidenav">
+  <a id="fechar" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
   <img src="imagens/logonovofundoescuroaltpq.png" alt="logo">
+  
   <a id="linkrelato" href="relatos.html" target="tela" ><button id="relato">Enviar Relato</button></a>
   <a href="home.html" target="tela">Início</a>
   <a href="pessoal.html" target="tela">Pessoal do SGSO</a>
@@ -42,7 +45,7 @@
 
 <div class="main">
   <iframe src="home.html" name="tela" id="tela" frameborder="0"></iframe>  
-</div>
+</div> 
 
 <script>
 
@@ -67,7 +70,7 @@ function openNav() {
 }
 
 function closeNav() {
-  document.getElementById("mySidepanel").style.width = "0";
+  document.getElementById("mySidepanel").style.width = "0px";
 }
 </script>
 

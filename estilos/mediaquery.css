@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 768px){
-    .sidenav {
+    div#mySidepanel {
        width: 0px;
-        
+    }
+
+    header {
+        margin: 0px;
     }
 
     span#menu {
@@ -17,6 +20,63 @@
     .main {
         margin-left: 0px;
         
-    }      
+    }
+    
+    .closebtn {
+        visibility: visible;
+        color:#cfcfcf;
+        position: absolute;
+        
+        margin: 0px 10px 0px 0px;
+        padding: 0px;
+        
+    }
+    
+    a#fechar {
+        position: relative;
+        width:20px;
+        float: right;
+        font-size: 36px;
+        margin: 0px 10px 0px 0px;
+        padding: 0px;       
+
+    }
+
+    a#fechar:hover{
+        background-color: transparent;
+    }
+
 }
 
+@media screen and (min-width: 769px){
+    .sidenav {
+       width: 200px;
+    }
+
+    header {
+        margin-left: 200px;
+    }
+
+    span#menu {
+        visibility: hidden;
+    }
+
+    .openbtn {
+        visibility: hidden;
+    }
+
+    .closebtn {
+        visibility: hiden;
+        width:10px;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+
+    }
+    
+    a#fechar {
+        visibility: hidden;
+    }
+    
+}

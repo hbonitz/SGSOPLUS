@@ -9,12 +9,21 @@ body {
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
         
 }
+div#fechar {
+    visibility: hidden;
+  
+}
 
 img {
-  margin: 0px 0px 0px 10px;
+  display: inline;
+  margin: 0px 20px 0px 10px;
   width: 180px;
   padding: 0px;
-
+  
+  
+.closebtn {
+  display: inline;
+}
 
 }
 
@@ -56,6 +65,7 @@ button#relato:active {
 header {
   background-color: #111;
   height: 50px;
+  margin-left: 200px;
   
 }
 
@@ -121,8 +131,9 @@ span#user:hover {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  margin-top: 50px;
-    
+  padding-top: 10px;
+ 
+      
 }
 
 /* Style the sidenav links and the dropdown button */
