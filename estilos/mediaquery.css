@@ -6,6 +6,14 @@
         
     }
 
+    span#menu {
+        visibility: visible;
+    }
+
+    .openbtn {
+        visibility: visible;
+    }
+
     .main {
         margin-left: 0px;
         

@@ -69,13 +69,9 @@ header {
   margin-left:10px;
   margin-top: 5px;
   border: 0px;
+  visibility: hidden;
   
 }
-
-.openbtn::after{
-  visibility: hidden;
-}
-
 
 span#menu {
   position: relative;
@@ -86,6 +82,7 @@ span#menu {
   float: left;
   width: 34px;
   height: 34px;
+  visibility: hidden;
 
 }
 
