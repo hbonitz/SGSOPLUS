@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGSO PLUS</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 500;
+             font-size: 2.3em;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            background-color: #110129;
+            }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: 7px;
+            padding: 40px;
+            box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+            gap: 5px;
+            width: 300px;
+            height: 300px;
+        }
+        .formulario {
+            font-size: 14px;
+        font-weight: 600
+        }
+
+        input#botao {
+            background-color: #f72585;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            border: none !important;
+            transition: all linear 160ms;
+            cursor: pointer;
+            margin: 0 !important;
+        }
+        
+        .input {
+        padding: 15px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        border-radius: 4px;
+        transition: all linear 160ms;
+        outline: none;
+        }
+
+        img {
+            
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">  
+        <img src="imagens/logonovofundoescurotrans.png" alt="logo">    
+        <h1>LOGIN</h1>
+        
+            <form action="">
+            <input class="input" type="text" name="usuario" id="usuario" placeholder="Username">
+            <input class="input" type="password" name="senha" id="senha" placeholder="Senha">
+            <input id="botao" type="submit" value="Entrar">
+        </form>
+    </div>
+</div>
+    
+</body>
+</html>
