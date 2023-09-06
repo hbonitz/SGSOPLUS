@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+
+        font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        }
+
+        h1 { 
+        text-align: center;
+        background-color: #000050;
+        color: whitesmoke;
+        position:sticky;
+        background: linear-gradient(180deg, #111 0%, #000050 100%);    
+        top: 0%;        
+
+        }
+
+        body {
+        background-color: rgb(228, 228, 228);
+
+        }
+
+        main {
+        background-color: whitesmoke;                       
+        margin: auto;
+        max-width: 800px; 
+        padding: 20px 30px 50px 50px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.267); 
+        }
+
+        div#nome {
+            display: inline-block;     
+            width: 400px;       
+        }
+
+        div#email {
+            display: inline-block;  
+        }
+
+        div#data {
+            display: inline-block;  
+            width: 200px;
+        }
+
+        div#aeronave {
+            display: inline-block;  
+            width: 200px;
+        }
+
+        div#os {
+            display: inline-block;            
+        }        
+
+        button#aprovar {
+            width: 100px;
+            height: 50px;
+            margin-right: 30px;
+            background-color: rgb(0, 223, 56);
+            color: white;
+            border: none;
+        }
+
+        button#aprovar:hover {
+            background-color: rgb(84, 255, 126);
+            border: 1px solid black;
+        }
+
+        button#aprovar:active {
+            -moz-transform: scale(0.97);
+            -webkit-transform: scale(0.97);
+            -o-transform: scale(0.97);
+            -ms-transform: scale(0.97);
+            transform: scale(0.97);
+        }
+        
+
+        button#recusar {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(167, 0, 0);
+            color: white;
+            border: none;
+        }
+
+        button#recusar:hover {
+            background-color: rgb(255, 118, 77);
+            border: 1px solid black;
+        }
+
+        button#recusar:active {
+            -moz-transform: scale(0.97);
+            -webkit-transform: scale(0.97);
+            -o-transform: scale(0.97);
+            -ms-transform: scale(0.97);
+            transform: scale(0.97);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="id"><strong>ID: </strong></div><br>
+        <div id="nome"><strong>Nome:</strong> </div> <div id="email"><strong>E-mail:</strong> </div><br>
+        <br>
+        <div id="data"><strong>Data:</strong> </div> 
+        <div id="aeronave"><strong>Aeronave:</strong> </div> 
+        <div id="os"><strong>OS:</strong> </div><br>
+        <br>
+        <span><strong>Ocorrência</strong></span><br>
+        <div id="ocorrencia">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, esse ut. Cumque, in, sit maxime provident eos pariatur dolor ratione error, repudiandae consectetur alias vitae. Officia enim tempore nam iste. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi excepturi possimus sunt esse similique distinctio fugit veniam amet cumque nostrum, fuga quas consequatur! Tempore iusto quam commodi praesentium possimus. A! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione iure omnis commodi praesentium dignissimos, suscipit doloribus quaerat. Adipisci culpa sit quos repellendus voluptatem dicta, voluptate aspernatur blanditiis a, minus maxime?</div><br>
+
+        <span><strong>Sugestão de Melhoria</strong></span>
+        <div id="melhoria">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque placeat voluptates architecto consequuntur, velit eligendi fugiat soluta nulla. Est ducimus labore tempora, voluptas quibusdam quasi esse delectus facere sequi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius ad illo, laborum libero esse dolore expedita sit tempore debitis explicabo architecto distinctio amet nemo illum deserunt. Eos itaque odio sit!</div>
+        <br>
+
+        <button id="aprovar"><strong>Aprovar</strong></button>
+        <button id="recusar"><strong>Recusar</strong></button>
+
+        <form action="processar.html" target="tela">
+
+        </form>
+    </main>
+</body>
+</html>

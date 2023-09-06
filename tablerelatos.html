@@ -4,30 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        * {
+        font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            background-color: rgb(228, 228, 228);    
+        }
+
+        table,tr,td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            position: relative;
+            text-align: center;
+                     
+        }
+        
+        table {
+            max-width: 100vw;
+        }
+        
+        .ID{
+            width: auto;        
+        }
+
+        .data{
+            width: auto;
+        }
+
+        .matricula {
+            width: 60px;
+        }
+
+        .os{
+            width: 100px;
+        }
+
+        .relato{
+            max-width: auto;
+        }
+
+        .status{
+            width: 150px;
+        }
+
+        thead {
+            background-color: rgb(58, 58, 58);
+            color: white;
+        }
+        thead > tr > th {
+            position:sticky;
+            top: -1px;
+            background-color: rgb(58, 58, 58);
+            color: white;
+            z-index: 1;
+            
+        }
+    </style>
 </head>
 <body>
-    <table>            
+    <table> 
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Data</th>
+                <th>Aeronave</th>
+                <th>OS</th>
+                <th>Relato</th> 
+                <th>Status</th>       
+            </tr>
+        </thead>           
         <tbody>            
-               <tr>                
-                       <td class="ID" style="width: 30px;"><a href="#">23/001</a></td>
-                       <td>05/09/2023</td>
-                       <td>PP-ABC</td>
-                       <td></td>
-                       <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolore architecto in ad exercitationem delectus! Repellat dolores aliquam dicta velit perferendis esse sunt odio numquam repudiandae ab ducimus, aliquid aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa esse nobis hic nihil quia cumque vitae doloribus! Labore neque laboriosam minima rem dicta vel possimus voluptas? Quas, dignissimos culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nam aliquid quos perferendis necessitatibus accusantium sit quibusdam, exercitationem dolorem sequi harum, ex fugiat ad. Officiis illum ab ullam error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia amet, cum ex dignissimos, fugiat culpa dolore accusantium quis ipsa necessitatibus. Quos qui molestias possimus, veniam saepe eum voluptates ad.</td>
-                       <td>Novo</td>
-               
+               <tr style="height: 50px;">             
+                    <td class="ID"><a href="#">23/001</a></td>
+                    <td class="data">05/09/2023</td>
+                    <td class="matricula">PP-ABC</td>
+                    <td class="os"></td>
+                    <td class="relato"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolore architecto in ad exercitationem delectus! Repellat dolores aliquam dicta velit perferendis esse sunt odio numquam repudiandae ab ducimus, aliquid aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa esse nobis hic nihil quia cumque vitae doloribus! Labore neque laboriosam minima rem dicta vel possimus voluptas? Quas, dignissimos culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nam aliquid quos perferendis necessitatibus accusantium sit quibusdam, exercitationem dolorem sequi harum, ex fugiat ad. Officiis illum ab ullam error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia amet, cum ex dignissimos, fugiat culpa dolore accusantium quis ipsa necessitatibus. Quos qui molestias possimus, veniam saepe eum voluptates ad.</td>
+                    <td class="status">Novo</td>               
                </tr>
-           
-           <tr>
-               
-               <td class="ID" style="width: 30px;"><a href="#">23/002</a></td>
-               <td>05/09/2023</td>
-               <td>PR-DEF</td>
-               <td></td>
-               <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolore architecto in ad exercitationem delectus! Repellat dolores aliquam dicta velit perferendis esse sunt odio numquam repudiandae ab ducimus, aliquid aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa esse nobis hic nihil quia cumque vitae doloribus! Labore neque laboriosam minima rem dicta vel possimus voluptas? Quas, dignissimos culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nam aliquid quos perferendis necessitatibus accusantium sit quibusdam, exercitationem dolorem sequi harum, ex fugiat ad. Officiis illum ab ullam error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia amet, cum ex dignissimos, fugiat culpa dolore accusantium quis ipsa necessitatibus. Quos qui molestias possimus, veniam saepe eum voluptates ad.</td>
-               <td>Em processamento</td>
-           
+               <tr>                
+                    <td class="ID" style="width: 30px;"><a href="#">23/001</a></td>
+                    <td class="data">05/09/2023</td>
+                    <td class="matricula">PP-ABC</td>
+                    <td class="os"></td>
+                    <td class="relato"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolore architecto in ad exercitationem delectus! Repellat dolores aliquam dicta velit perferendis esse sunt odio numquam repudiandae ab ducimus, aliquid aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa esse nobis hic nihil quia cumque vitae doloribus! Labore neque laboriosam minima rem dicta vel possimus voluptas? Quas, dignissimos culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nam aliquid quos perferendis necessitatibus accusantium sit quibusdam, exercitationem dolorem sequi harum, ex fugiat ad. Officiis illum ab ullam error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia amet, cum ex dignissimos, fugiat culpa dolore accusantium quis ipsa necessitatibus. Quos qui molestias possimus, veniam saepe eum voluptates ad.</td>
+                    <td class="status">Novo</td>               
+           </tr>
+           <tr>                
+                <td class="ID" style="width: 30px;"><a href="#">23/001</a></td>
+                <td class="data">05/09/2023</td>
+                <td class="matricula">PP-ABC</td>
+                <td class="os"></td>
+                <td class="relato"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolore architecto in ad exercitationem delectus! Repellat dolores aliquam dicta velit perferendis esse sunt odio numquam repudiandae ab ducimus, aliquid aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa esse nobis hic nihil quia cumque vitae doloribus! Labore neque laboriosam minima rem dicta vel possimus voluptas? Quas, dignissimos culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nam aliquid quos perferendis necessitatibus accusantium sit quibusdam, exercitationem dolorem sequi harum, ex fugiat ad. Officiis illum ab ullam error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia amet, cum ex dignissimos, fugiat culpa dolore accusantium quis ipsa necessitatibus. Quos qui molestias possimus, veniam saepe eum voluptates ad.</td>
+                <td class="status">Novo</td>               
        </tr>
+       <tr>                
+        <td class="ID" style="width: 30px;"><a href="#">23/001</a></td>
+        <td class="data">05/09/2023</td>
+        <td class="matricula">PP-ABC</td>
+        <td class="os"></td>
+        <td class="relato"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolore architecto in ad exercitationem delectus! Repellat dolores aliquam dicta velit perferendis esse sunt odio numquam repudiandae ab ducimus, aliquid aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa esse nobis hic nihil quia cumque vitae doloribus! Labore neque laboriosam minima rem dicta vel possimus voluptas? Quas, dignissimos culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nam aliquid quos perferendis necessitatibus accusantium sit quibusdam, exercitationem dolorem sequi harum, ex fugiat ad. Officiis illum ab ullam error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia amet, cum ex dignissimos, fugiat culpa dolore accusantium quis ipsa necessitatibus. Quos qui molestias possimus, veniam saepe eum voluptates ad.</td>
+        <td class="status">Novo</td>               
+   </tr>
+   <tr>                
+    <td class="ID" style="width: 30px;"><a href="#">23/001</a></td>
+    <td class="data">05/09/2023</td>
+    <td class="matricula">PP-ABC</td>
+    <td class="os"></td>
+    <td class="relato"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolore architecto in ad exercitationem delectus! Repellat dolores aliquam dicta velit perferendis esse sunt odio numquam repudiandae ab ducimus, aliquid aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa esse nobis hic nihil quia cumque vitae doloribus! Labore neque laboriosam minima rem dicta vel possimus voluptas? Quas, dignissimos culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nam aliquid quos perferendis necessitatibus accusantium sit quibusdam, exercitationem dolorem sequi harum, ex fugiat ad. Officiis illum ab ullam error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia amet, cum ex dignissimos, fugiat culpa dolore accusantium quis ipsa necessitatibus. Quos qui molestias possimus, veniam saepe eum voluptates ad.</td>
+    <td class="status">Novo</td>               
+</tr>
+           
+
        </tbody>
    </table>
     
