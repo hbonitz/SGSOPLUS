@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="text/javascript">
+        function showHideRow(row) {
+            $("#" + row).toggle();
+        }
+    </script>
     <style>
         *{
             margin: 0px;
@@ -15,7 +20,8 @@
         }
 
         body {
-            background-color: rgb(228, 228, 228);    
+            background-color: rgb(228, 228, 228);
+             
         }
 
         table,tr,td, th {
@@ -26,33 +32,32 @@
             text-align: center;
                      
         }
-        
+        tr:hover {
+            background-color: rgb(187, 187, 255);
+            
+        }
         table {
-            max-width: 100vw;
+            width: 100vw;
         }
         
-        .ID{
-            width: auto;        
-        }
-
-        .data{
-            width: auto;
-        }
+        td {
+            overflow: hidden;
+            text-overflow: ellipsis;                  
+            white-space: nowrap;
+            
+             
+        }         
 
         .matricula {
-            width: 60px;
+            min-width: 60px;
         }
 
         .os{
-            width: 100px;
-        }
-
-        .relato{
-            max-width: auto;
+            min-width: 100px;
         }
 
         .status{
-            width: 150px;
+            min-width: 150px;
         }
 
         thead {
@@ -67,65 +72,75 @@
             z-index: 1;
             
         }
+
+        #table_detail .hidden_row {
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <table> 
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Data</th>
-                <th>Aeronave</th>
-                <th>OS</th>
-                <th>Relato</th> 
-                <th>Status</th>       
-            </tr>
-        </thead>           
-        <tbody>            
-               <tr style="height: 50px;">             
-                    <td class="ID"><a href="#">23/001</a></td>
-                    <td class="data">05/09/2023</td>
-                    <td class="matricula">PP-ABC</td>
-                    <td class="os"></td>
-                    <td class="relato"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolore architecto in ad exercitationem delectus! Repellat dolores aliquam dicta velit perferendis esse sunt odio numquam repudiandae ab ducimus, aliquid aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa esse nobis hic nihil quia cumque vitae doloribus! Labore neque laboriosam minima rem dicta vel possimus voluptas? Quas, dignissimos culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nam aliquid quos perferendis necessitatibus accusantium sit quibusdam, exercitationem dolorem sequi harum, ex fugiat ad. Officiis illum ab ullam error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia amet, cum ex dignissimos, fugiat culpa dolore accusantium quis ipsa necessitatibus. Quos qui molestias possimus, veniam saepe eum voluptates ad.</td>
-                    <td class="status">Novo</td>               
+    
+        <div>
+            <table id="table_detail">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Data</th>
+                        <th>Aeronave</th>
+                        <th>OS</th>
+                        <th>Relato</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+            
+                    <tbody>
+            
+                       <tr onclick="showHideRow('hidden_row1');">
+                            <td class="ID" style="width: 30px;"><a href="#">23/001</a></td>
+                            <td class="data">05/09/2023</td>
+                            <td class="matricula">PP-ABC</td>
+                            <td class="os"></td>
+                            <td class="relato"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolore architecto in ad exercitationem delectus! Repellat dolores aliquam dicta velit perferendis esse sunt odio numquam repudiandae ab ducimus, aliquid aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa esse nobis hic nihil quia cumque vitae doloribus! Labore neque laboriosam minima rem dicta vel possimus voluptas? Quas, dignissimos culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nam aliquid quos perferendis necessitatibus accusantium sit quibusdam, exercitationem dolorem sequi harum, ex fugiat ad. Officiis illum ab ullam error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia amet, cum ex dignissimos, fugiat culpa dolore accusantium quis ipsa necessitatibus. Quos qui molestias possimus, veniam saepe eum voluptates ad.</td>
+                            <td class="status">Novo</td>
+                   </tr>
+                   <tr id="hidden_row1" class="hidden_row">
+                    <td colspan=6>
+                        Person-1 is 24 years old and 
+                        he is a computer programmer 
+                        he earns 60000 per month
+                    </td>
+                </tr>
+            
+                   <tr>
+                        <td class="ID" style="width: 30px;"><a href="#">23/001</a></td>
+                        <td class="data">05/09/2023</td>
+                        <td class="matricula">PP-ABC</td>
+                        <td class="os"></td>
+                        <td class="relato"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolore architecto in ad exercitationem delectus! Repellat dolores aliquam dicta velit perferendis esse sunt odio numquam repudiandae ab ducimus, aliquid aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa esse nobis hic nihil quia cumque vitae doloribus! Labore neque laboriosam minima rem dicta vel possimus voluptas? Quas, dignissimos culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nam aliquid quos perferendis necessitatibus accusantium sit quibusdam, exercitationem dolorem sequi harum, ex fugiat ad. Officiis illum ab ullam error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia amet, cum ex dignissimos, fugiat culpa dolore accusantium quis ipsa necessitatibus. Quos qui molestias possimus, veniam saepe eum voluptates ad.</td>
+                        <td class="status">Novo</td>
                </tr>
-               <tr>                
-                    <td class="ID" style="width: 30px;"><a href="#">23/001</a></td>
-                    <td class="data">05/09/2023</td>
-                    <td class="matricula">PP-ABC</td>
-                    <td class="os"></td>
-                    <td class="relato"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolore architecto in ad exercitationem delectus! Repellat dolores aliquam dicta velit perferendis esse sunt odio numquam repudiandae ab ducimus, aliquid aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa esse nobis hic nihil quia cumque vitae doloribus! Labore neque laboriosam minima rem dicta vel possimus voluptas? Quas, dignissimos culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nam aliquid quos perferendis necessitatibus accusantium sit quibusdam, exercitationem dolorem sequi harum, ex fugiat ad. Officiis illum ab ullam error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia amet, cum ex dignissimos, fugiat culpa dolore accusantium quis ipsa necessitatibus. Quos qui molestias possimus, veniam saepe eum voluptates ad.</td>
-                    <td class="status">Novo</td>               
-           </tr>
-           <tr>                
+               <tr>
                 <td class="ID" style="width: 30px;"><a href="#">23/001</a></td>
                 <td class="data">05/09/2023</td>
                 <td class="matricula">PP-ABC</td>
                 <td class="os"></td>
                 <td class="relato"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolore architecto in ad exercitationem delectus! Repellat dolores aliquam dicta velit perferendis esse sunt odio numquam repudiandae ab ducimus, aliquid aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa esse nobis hic nihil quia cumque vitae doloribus! Labore neque laboriosam minima rem dicta vel possimus voluptas? Quas, dignissimos culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nam aliquid quos perferendis necessitatibus accusantium sit quibusdam, exercitationem dolorem sequi harum, ex fugiat ad. Officiis illum ab ullam error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia amet, cum ex dignissimos, fugiat culpa dolore accusantium quis ipsa necessitatibus. Quos qui molestias possimus, veniam saepe eum voluptates ad.</td>
-                <td class="status">Novo</td>               
-       </tr>
-       <tr>                
-        <td class="ID" style="width: 30px;"><a href="#">23/001</a></td>
-        <td class="data">05/09/2023</td>
-        <td class="matricula">PP-ABC</td>
-        <td class="os"></td>
-        <td class="relato"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolore architecto in ad exercitationem delectus! Repellat dolores aliquam dicta velit perferendis esse sunt odio numquam repudiandae ab ducimus, aliquid aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa esse nobis hic nihil quia cumque vitae doloribus! Labore neque laboriosam minima rem dicta vel possimus voluptas? Quas, dignissimos culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nam aliquid quos perferendis necessitatibus accusantium sit quibusdam, exercitationem dolorem sequi harum, ex fugiat ad. Officiis illum ab ullam error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia amet, cum ex dignissimos, fugiat culpa dolore accusantium quis ipsa necessitatibus. Quos qui molestias possimus, veniam saepe eum voluptates ad.</td>
-        <td class="status">Novo</td>               
-   </tr>
-   <tr>                
-    <td class="ID" style="width: 30px;"><a href="#">23/001</a></td>
-    <td class="data">05/09/2023</td>
-    <td class="matricula">PP-ABC</td>
-    <td class="os"></td>
-    <td class="relato"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolore architecto in ad exercitationem delectus! Repellat dolores aliquam dicta velit perferendis esse sunt odio numquam repudiandae ab ducimus, aliquid aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa esse nobis hic nihil quia cumque vitae doloribus! Labore neque laboriosam minima rem dicta vel possimus voluptas? Quas, dignissimos culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nam aliquid quos perferendis necessitatibus accusantium sit quibusdam, exercitationem dolorem sequi harum, ex fugiat ad. Officiis illum ab ullam error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia amet, cum ex dignissimos, fugiat culpa dolore accusantium quis ipsa necessitatibus. Quos qui molestias possimus, veniam saepe eum voluptates ad.</td>
-    <td class="status">Novo</td>               
-</tr>
-           
-
-       </tbody>
-   </table>
+                <td class="status">Novo</td>
+               </tr>
+               <tr>
+            <td class="ID" style="width: 30px;"><a href="#">23/001</a></td>
+            <td class="data">05/09/2023</td>
+            <td class="matricula">PP-ABC</td>
+            <td class="os"></td>
+            <td class="relato"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolore architecto in ad exercitationem delectus! Repellat dolores aliquam dicta velit perferendis esse sunt odio numquam repudiandae ab ducimus, aliquid aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa esse nobis hic nihil quia cumque vitae doloribus! Labore neque laboriosam minima rem dicta vel possimus voluptas? Quas, dignissimos culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nam aliquid quos perferendis necessitatibus accusantium sit quibusdam, exercitationem dolorem sequi harum, ex fugiat ad. Officiis illum ab ullam error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia amet, cum ex dignissimos, fugiat culpa dolore accusantium quis ipsa necessitatibus. Quos qui molestias possimus, veniam saepe eum voluptates ad.</td>
+            <td class="status">Novo</td>
+            </tr>
+            
+               </tbody>
+            
+               </table>
+        </div>
+    
     
 </body>
 </html>
